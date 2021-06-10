@@ -6,15 +6,15 @@ import {AppState} from '../../reducers';
 
 @Component({
   selector: 'app-layout',
-  templateUrl: './layout.component.html',
-  styleUrls: ['./layout.component.scss'],
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
 })
-export class LayoutComponent implements OnInit {
+export class LoginComponent implements OnInit {
   data$: Observable<any>;
 
   constructor(
     public store: Store<AppState>,
-    public router: Router,
+    public router: Router
   ) {
   }
 

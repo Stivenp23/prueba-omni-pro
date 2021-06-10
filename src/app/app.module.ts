@@ -5,10 +5,10 @@ import {CommonModule, DatePipe} from '@angular/common';
 import {FormsModule} from '@angular/forms';
 // Components
 import {AppComponent} from './app.component';
-import {LayoutComponent} from './pages/layout/layout.component';
+import {HomeProductComponent} from './pages/home-product/home-product.component';
+import {LoginComponent} from './pages/login/login.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HeaderComponent} from './components/header/header.component';
-import {ModalComponent} from './components/modal/modal.component';
 // Redux
 import * as reducers from './reducers';
 import {EffectsModule} from '@ngrx/effects';
@@ -28,10 +28,10 @@ export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.A
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
+    HomeProductComponent,
+    LoginComponent,
     FooterComponent,
     HeaderComponent,
-    ModalComponent
   ],
   imports: [
     CommonModule,

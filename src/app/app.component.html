@@ -1,2 +1,13 @@
-<router-outlet></router-outlet>
+<div class="container">
+  <ng-container *ngIf="deviceService.isMobile(); else otherDevice">
+    <router-outlet></router-outlet>
+  </ng-container>
+  <ng-template #otherDevice>
+    <div class="other__device">
+      <p>{{text}}</p>
+    </div>
+  </ng-template>
+</div>
+
+
 
