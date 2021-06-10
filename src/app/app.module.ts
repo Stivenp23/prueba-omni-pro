@@ -8,8 +8,6 @@ import {AppComponent} from './app.component';
 import {LayoutComponent} from './pages/layout/layout.component';
 import {FooterComponent} from './components/footer/footer.component';
 import {HeaderComponent} from './components/header/header.component';
-import {CalendarComponent} from './components/calendar/calendar.component';
-import localePy from '@angular/common/locales/es-PY';
 import {ModalComponent} from './components/modal/modal.component';
 // Redux
 import * as reducers from './reducers';
@@ -26,7 +24,6 @@ import {NgbModalModule} from '@ng-bootstrap/ng-bootstrap';
 import {EventsService} from './services/eventsService';
 
 export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.AppState>>>('Registered Reducers');
-registerLocaleData(localePy, 'es');
 
 @NgModule({
   declarations: [
@@ -34,7 +31,6 @@ registerLocaleData(localePy, 'es');
     LayoutComponent,
     FooterComponent,
     HeaderComponent,
-    CalendarComponent,
     ModalComponent
   ],
   imports: [
