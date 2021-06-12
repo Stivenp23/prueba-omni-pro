@@ -1,6 +1,11 @@
-import {Component, OnInit} from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+} from '@angular/core';
 import {Router} from '@angular/router';
-import {Observable} from 'rxjs';
 import {Store} from '@ngrx/store';
 import {AppState} from '../../reducers';
 
@@ -10,7 +15,8 @@ import {AppState} from '../../reducers';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  data$: Observable<any>;
+  logo = '../assets/img/logo.png';
+  formSuccess: boolean;
 
   constructor(
     public store: Store<AppState>,
@@ -19,5 +25,12 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+  success() {
+    this.formSuccess = true;
+    setTimeout(() => {
+      this.formSuccess = false;
+    }, 3000);
   }
 }

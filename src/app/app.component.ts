@@ -6,7 +6,7 @@ import { DeviceDetectorService } from 'ngx-device-detector';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'calendar-slab-code';
+  title = 'Omni Pro';
   text = 'Por favor ingresar en una resolución mobile, según el diseño'
   constructor(
     public deviceService: DeviceDetectorService
