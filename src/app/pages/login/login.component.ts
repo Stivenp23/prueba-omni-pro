@@ -10,7 +10,7 @@ import {Store} from '@ngrx/store';
 import {AppState} from '../../reducers';
 
 @Component({
-  selector: 'app-layout',
+  selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })

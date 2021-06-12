@@ -1,1 +1,1 @@
-export * from './events.actions';
+export * from './app.actions';

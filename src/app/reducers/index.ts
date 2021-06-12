@@ -1,7 +1,5 @@
-export * from './events.reducer';
-export * from './cities.reducer';
+export * from './app.reducer';
 
 export interface AppState {
-  events: any;
-  cities: any;
+  app: any;
 }

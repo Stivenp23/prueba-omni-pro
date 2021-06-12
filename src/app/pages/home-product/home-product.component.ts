@@ -5,7 +5,7 @@ import {Store} from '@ngrx/store';
 import {AppState} from '../../reducers';
 
 @Component({
-  selector: 'app-layout',
+  selector: 'app-home-product',
   templateUrl: './home-product.component.html',
   styleUrls: ['./home-product.component.scss'],
 })

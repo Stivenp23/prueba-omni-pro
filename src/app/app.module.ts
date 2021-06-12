@@ -23,7 +23,7 @@ import {environment} from '../environments/environment';
 // Lib
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgbModalModule, NgbNavModule} from '@ng-bootstrap/ng-bootstrap';
-import {EventsService} from './services/eventsService';
+import {AppService} from './services/app.service';
 
 export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.AppState>>>('Registered Reducers');
 
@@ -54,9 +54,9 @@ export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.A
     {provide: 'ENV', useValue: environment},
     {provide: reducerToken, useValue: reducers},
     {provide: LOCALE_ID, useValue: 'es'},
-    EventsService
+    AppService
   ],
-  bootstrap: [AppComponent, TabsLoginComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
