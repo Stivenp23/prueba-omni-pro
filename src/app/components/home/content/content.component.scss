@@ -1,0 +1,47 @@
+.content{
+  margin: 40px 0;
+    .content-text{
+      font-family: 'Roboto', sans-serif;
+      text-align: Center;
+      vertical-align: Top;
+      h2{
+        font-size: 50px;
+        margin-bottom: 20px;
+        @media (max-width: 672px){
+          font-size: 30px;
+        }
+      }
+    }
+    .calification{
+      i{
+        color: #D61043;
+      }
+      .starts{
+        justify-content: center;
+        display: flex;
+        font-size: 25px;
+        margin-bottom: 20px;
+        @media (max-width: 672px){
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+      }
+      .text-calification{
+        p{
+          margin-left: 25px;
+          font-family: 'Roboto', sans-serif;
+        }
+      }
+    }
+    .price{
+      p{
+        font-family: fantasy;
+        font-weight: 400;
+        font-size: 28px;
+        text-align: center;
+        @media (max-width: 672px){
+          font-size: 25px;
+        }
+      }
+    }
+}

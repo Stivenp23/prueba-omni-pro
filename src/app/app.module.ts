@@ -5,13 +5,6 @@ import {CommonModule, DatePipe} from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 // Components
 import {AppComponent} from './app.component';
-import {HomeProductComponent} from './pages/home-product/home-product.component';
-import {LoginComponent} from './pages/login/login.component';
-import {FooterComponent} from './components/footer/footer.component';
-import {HeaderComponent} from './components/header/header.component';
-import {TabsLoginComponent} from './components/tabs-login/tabs-login.component';
-import {ThkModuleComponent} from './components/thk-module/thk-module.component';
-
 // Redux
 import * as reducers from './reducers';
 import {EffectsModule} from '@ngrx/effects';
@@ -24,18 +17,14 @@ import {environment} from '../environments/environment';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgbModalModule, NgbNavModule} from '@ng-bootstrap/ng-bootstrap';
 import {AppService} from './services/app.service';
+import {HomeModule} from './pages/home/home.module';
+import {LoginModule} from './pages/login/login.module';
 
 export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.AppState>>>('Registered Reducers');
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeProductComponent,
-    LoginComponent,
-    FooterComponent,
-    HeaderComponent,
-    TabsLoginComponent,
-    ThkModuleComponent
+    AppComponent
   ],
   imports: [
     CommonModule,
@@ -48,13 +37,17 @@ export const reducerToken = new InjectionToken<ActionReducerMap<State<reducers.A
     BrowserAnimationsModule,
     NgbModalModule,
     NgbNavModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HomeModule,
+    LoginModule
   ],
   providers: [
     {provide: 'ENV', useValue: environment},
     {provide: reducerToken, useValue: reducers},
     {provide: LOCALE_ID, useValue: 'es'},
     AppService
+  ],
+  exports: [
   ],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,65 @@
+.buttons{
+  .content{
+    .counter-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media(max-width: 500px){
+        justify-content: initial;
+      }
+      .info-text{
+        align-items: center;
+        margin-right: 15px;
+        h5{
+          font-family: 'Montserrat', sans-serif;
+          font-weight: bold;
+          @media (max-width: 679px){
+            font-size: 16px;
+            display: flex;
+          }
+        }
+      }
+      .input-container{
+        border: 1px solid #b1b1b1;
+        width: 140px;
+        padding: 5px 0;
+        button{
+          border: 0;
+          background-color: transparent;
+        }
+        input{
+          border: 0;
+          text-align: center;
+          outline: none;
+          width: 95px;
+        }
+        input[type=number]::-webkit-outer-spin-button,
+        input[type=number]::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+        input[type=number] {
+          -moz-appearance:textfield;
+        }
+      }
+    }
+    .button-add{
+      text-align: center;
+      button{
+        width: 90%;
+        margin: 20px 0;
+        padding: 10px 0;
+        background-color: #33333A;
+        border: 2px solid black;
+        color: white;
+        font-family: Roboto, sans-serif;
+        font-weight: lighter;
+        &:hover{
+          transition: 0.5s;
+          color: black;
+          background-color: white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+<div class="nav">
+	<div class="content">
+		<div class="menu" (click)="onMenu()">
+
+			<label for="hamburger" [hidden]="isOpen"><i class="fas fa-bars"></i></label>
+			<label for="hamburger" [hidden]="!isOpen"><i class="fas fa-times"></i></label>
+		</div>
+		<div *ngIf="isOpen" class="dropdown" id="dropdown">
+			<a>Example</a>
+			<a>Example</a>
+			<a>Example</a>
+		</div>
+	</div>
+</div>

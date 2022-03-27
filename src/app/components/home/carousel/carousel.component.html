@@ -1,0 +1,32 @@
+<section class="carousel">
+  <div class="container">
+    <div class="content">
+      <div class="content-text">
+        <h4>
+          También te podría gustar
+        </h4>
+      </div>
+      <ng-container *ngIf="products.length > 0">
+        <swiper
+          [config]="config"
+        >
+          <ng-template swiperSlide *ngFor="let product of products; let i = index">
+            <div class="content">
+              <div class="product">
+                <img *ngIf="product?.image"
+                     [src]="product?.image"
+                     alt="image-product">
+                <h6 *ngIf="product?.title">
+                  {{ product.title }}
+                </h6>
+                <p *ngIf="product?.price">
+                  {{ product?.price }}
+                </p>
+              </div>
+            </div>
+          </ng-template>
+        </swiper>
+      </ng-container>
+    </div>
+  </div>
+</section>

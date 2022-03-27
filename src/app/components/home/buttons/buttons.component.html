@@ -1,0 +1,20 @@
+<section class="buttons">
+  <div class="container">
+    <div class="content">
+      <div class="counter-content">
+        <div class="info-text">
+          <h5>CANTIDAD</h5>
+        </div>
+        <div class="input-container">
+          <button (click)="count('res')">-</button>
+          <input type="number" [(ngModel)]="countInput" readonly>
+          <button (click)="count('sum')">+</button>
+        </div>
+      </div>
+      <div class="button-add">
+        <button class="btn-">AÑADIR AL CARRITO</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+</section>

@@ -1,0 +1,18 @@
+<section class="description">
+  <div class="container">
+    <div class="content">
+      <div class="text-content">
+        <h5>Descripción</h5>
+        <p class="text-1">in eu blandit metus. Phasellus vitae consequat angue. Cras auctor
+        lacus a purus convallis</p>
+       <ng-container *ngIf="see">
+         <p>1in eu blandit metus. Phasellus vitae consequat angue. Cras auctor
+           lacus a purus convallis...</p>
+         <p>2in eu blandit metus. Phasellus vitae consequat angue. Cras auctor
+           lacus a purus convallis...</p>
+       </ng-container>
+        <a (click)="seeText()">{{text}}</a>
+      </div>
+    </div>
+  </div>
+</section>
