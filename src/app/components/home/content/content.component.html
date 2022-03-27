@@ -3,16 +3,21 @@
     <div class="content-text">
       <h2>Pantalones para Dama <br>"The Sideswept Dhoti"</h2>
     </div>
-    <div class="calification">
+    <div class="qualification">
       <div class="starts">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <div class="text-calification">
-          <p>4 de 5</p>
-        </div>
+        <input id="radio1" type="radio" name="estrellas" value="5" [(ngModel)]="valueStart">
+        <label for="radio1"><i class="fas fa-star"></i></label>
+        <input id="radio2" type="radio" name="estrellas" value="4" [(ngModel)]="valueStart">
+        <label for="radio2"><i class="fas fa-star"></i></label>
+        <input id="radio3" type="radio" name="estrellas" value="3" [(ngModel)]="valueStart">
+        <label for="radio3"><i class="fas fa-star"></i></label>
+        <input id="radio4" type="radio" name="estrellas" value="2" [(ngModel)]="valueStart">
+        <label for="radio4"><i class="fas fa-star"></i></label>
+        <input id="radio5" type="radio" name="estrellas" value="1" [(ngModel)]="valueStart">
+        <label for="radio5"><i class="fas fa-star"></i></label>
+      </div>
+      <div class="text-qualification">
+        <p>{{valueStart}} de 5</p>
       </div>
     </div>
     <div class="price">

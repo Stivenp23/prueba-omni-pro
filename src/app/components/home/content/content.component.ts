@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./content.component.scss']
 })
 export class ContentComponent implements OnInit {
-
+  valueStart = 0;
   constructor() { }
 
   ngOnInit(): void {

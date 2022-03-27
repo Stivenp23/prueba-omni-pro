@@ -21,7 +21,7 @@
       }
       .input-container{
         border: 1px solid #b1b1b1;
-        width: 140px;
+        width: 110px;
         padding: 5px 0;
         button{
           border: 0;
@@ -31,7 +31,7 @@
           border: 0;
           text-align: center;
           outline: none;
-          width: 95px;
+          width: 64px;
         }
         input[type=number]::-webkit-outer-spin-button,
         input[type=number]::-webkit-inner-spin-button {
@@ -46,14 +46,15 @@
     .button-add{
       text-align: center;
       button{
-        width: 90%;
+        width: 100%;
+        max-width: 350px;
         margin: 20px 0;
         padding: 10px 0;
         background-color: #33333A;
         border: 2px solid black;
         color: white;
         font-family: Roboto, sans-serif;
-        font-weight: lighter;
+        font-weight: bold;
         &:hover{
           transition: 0.5s;
           color: black;

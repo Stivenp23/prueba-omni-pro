@@ -1,8 +1,15 @@
 .banner{
+  @media (min-width: 1200px) {
+    background-color: #ECEFF1;
+  }
   .content{
     .content-image{
       img{
         width: 100%;
+        @media (min-width: 1200px) {
+          max-height: 300px;
+          object-fit: contain;
+        }
       }
     }
   }

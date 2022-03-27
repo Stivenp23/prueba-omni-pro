@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-buttons',
@@ -7,19 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
   countInput: number = 1
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
-  count(operations: string){
-    //this.countInput = 5
-    if (operations === 'res'){
-      //console.log('Esta es resta');
-      this.countInput -= 1;
-    }if (operations === 'sum'){
-      //console.log('Esta es suma');
-      this.countInput += 1;
+  count(operations: string) {
+    switch (operations) {
+      case  'res':
+        if (this.countInput >= 1) {
+          this.countInput -= 1;
+        }
+        break;
+      case 'sum':
+        this.countInput += 1;
+        break;
+      default:
+        break;
     }
   }
 

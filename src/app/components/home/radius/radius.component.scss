@@ -45,7 +45,7 @@
         display: none;
         & + label{
           cursor: pointer;
-          min-width: 50px;
+          min-width: 40px;
           border-radius: 0;
           margin-right: 4px;
           @media (max-width: 679px){
